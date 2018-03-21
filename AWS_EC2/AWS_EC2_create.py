@@ -8,7 +8,7 @@ vpccon = boto.vpc.connect_to_region(region)
 vpcid ='vpc-xxxxx'
 vpc = vpccon.get_all_vpcs(vpc_ids=[vpcid])[0];	
 	
-#getsecurity group id, from "Security Groups" sec>on of EC2 management console	
+#getsecurity group id	
 secgrpid='sg-xxxxxxx'
 group = ec2.get_all_security_groups(group_ids=[secgrpid])[0]
 
@@ -16,10 +16,9 @@ group = ec2.get_all_security_groups(group_ids=[secgrpid])[0]
 sn=vpccon.get_all_subnets(filters={'vpcId':[vpcid]})	
 sn1=sn[0]
 
-#get KeyPair from Keypairs in region, must be on your machine to use ssh	
+#get KeyPair from Keypairs 	
 keypairname= 'SSH_xxxxxx'
-#do not need to actually get key	
-#key= ec2.get_all_key_pairs\(keynames=[keypairname]\)[0]
+
 
 #  AMI-ID
 amiid='ami-3a674d5a'
