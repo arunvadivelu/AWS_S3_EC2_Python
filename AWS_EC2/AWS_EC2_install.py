@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+# Install Tomcat
 
 import os,sys,time
 import paramiko
