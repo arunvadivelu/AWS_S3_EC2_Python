@@ -1,7 +1,3 @@
-#!/usr/bin/env python2
-#-*- coding: utf-8 -*-
-
-
 # Start Ec2 Instance
 
 import os,sys,time
