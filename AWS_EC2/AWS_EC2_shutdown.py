@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 # Shutdown Ec2 Instance
 
 import sys
